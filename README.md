@@ -16,15 +16,36 @@
        FA 2020
     </h4> 
 </center>
-
-
 ------------------------------------------
 
 ### Abstract
 
 This project is inspired by the coding assignment of course `VE444` to implement some classical networks algos using pure-python effectively and efficiently. Once we open source code of this project and if you want to refer to our work, please follow the Joint Institute’s honor code and don’t plagiarize these codes directly.
 
-### List of Algos
+### Dependency
+
+Actually, in this project, we only use the pure-python but also two efficient computation package in python called `pandas` and `numpy`, you can run the following instruction to install both two packages in your python environments.
+
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+### Algorithms
+
+#### PageRank
+
+To run the algo, here is an example:
+
+```bash
+python ./pagerank/pagerank.py --edges ./pagerank/edgelists.txt --max_itr 500 --epsilon 0.001 --beta 0.85
+```
+
+For more detailed usage, you can check it with
+
+```bash
+python ./pagerank/pagerank.py --help
+```
 
 ### Reference
 
