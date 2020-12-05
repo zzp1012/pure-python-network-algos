@@ -48,7 +48,7 @@ python ./pagerank/pagerank.py --help
 
 #### Influence Maximization Problem
 
-To run this program, here is an example"
+To run hill-climbing algo, here is an example:
 
 ```bash
 python ./influence-maximization/hill-climbing.py --edges ./influence-maximization/Employee_Movie_Choices.txt
@@ -58,6 +58,20 @@ For more detailed usage, you can check it with
 
 ```bash
 python ./influence-maximization/hill-climbing.py --help
+```
+
+#### Epidemic Model
+
+To simulate SIR model, here is an example:
+
+```bash
+python ./epidemic-model/SIR-model.py --beta 0.2 --delta 0.1 --total 1000 --recovery 0 --infected 1 --path ./
+```
+
+For more detailed usage, you can check it with
+
+```bash
+python ./epidemic-model/SIR-model.py --help
 ```
 
 ### Reference
