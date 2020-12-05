@@ -3,3 +3,4 @@ pandas
 logging
 argparse
 matplotlib
+networkx
