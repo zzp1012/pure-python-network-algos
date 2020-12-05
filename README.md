@@ -30,6 +30,37 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
+### Grading
+
+This part/branch is for **TA Grading**.
+
+1. For Hw3.1, plz run:
+
+```bash
+python ./epidemic-model/SIR-model.py --beta 0.2 --delta 0.1 --total 1000 --recovery 0 --infected 1 --path ./
+```
+
+The figure will be saved in `./epidemic-model/`
+
+2. For Hw3.2.1, plz run:
+
+```bash
+python ./degree-distribution/degree-distribution.py 
+```
+The plot will be saved in `./degree-distribution/`.
+
+3. For Hw3.2.2, plz run:
+
+```bash
+python ./influence-maximization/hill-climbing.py --edges ./influence-maximization/Employee_Movie_Choices.txt
+```
+
+4. For Hw3.3, plz run:
+
+```bash
+python ./pagerank/pagerank.py --edges ./pagerank/edgelists.txt --max_itr 500 --epsilon 0.001 --beta 0.85
+```
+
 ### Algorithms
 
 #### PageRank
