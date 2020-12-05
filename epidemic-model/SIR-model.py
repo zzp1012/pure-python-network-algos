@@ -21,7 +21,7 @@ def simulate_SIR(args):
     """
     # init
     S, I, R  = [(args.total - args.recovery - args.infected) / args.total], [args.infected / args.total], [args.recovery / args.total]
-    while I[-1] > 1e-10:
+    while round(I[-1] * args.total) > 0:
         # solve the S, I, R for each iteration
         dS = - args.beta * S[-1] * I[-1]
         dR = args.delta * I[-1]
