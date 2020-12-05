@@ -10,7 +10,7 @@ logging.basicConfig(
                     # filemode = "w+",
                     format='%(name)s %(levelname)s %(message)s',
                     datefmt = "%H:%M:%S",
-                    level=logging.DEBUG)
+                    level=logging.INFO)
 logger = logging.getLogger("hill-climbing")
 
 

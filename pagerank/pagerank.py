@@ -10,7 +10,7 @@ logging.basicConfig(
                     # filemode = "w+",
                     format='%(name)s %(levelname)s %(message)s',
                     datefmt = "%H:%M:%S",
-                    level=logging.DEBUG)
+                    level=logging.INFO)
 logger = logging.getLogger("pagerank")
 
 
@@ -90,6 +90,19 @@ def args_parser():
                         help= "enable debug info output")
 
     args = parser.parse_args()
+
+    if args.beta > 1 or args.beta < 0:
+        logger.warning("The value for random teleport probability is illegal. Turn to default 0.85")
+        args.beta = 0.85
+    
+    if args.epsilon > 1:
+        logger.warning("The value for convergence epsilon is too small. Turn to default 0.001")
+        args.epsilon = 0.001
+
+    if args.max_itr < 0:
+        logger.warning("The value for maximum iterations is illegal. Turn to default 500")
+        args.max_itr = 500
+
     return args
 
 
