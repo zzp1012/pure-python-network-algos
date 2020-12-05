@@ -78,6 +78,8 @@ python ./epidemic-model/SIR-model.py --help
 
 [1] Zhu, Y., 2020. *Ve444 Networks Hw3.pdf*.
 
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=zzp1012&repo=pure-python-network-algos)](https://github.com/anuraghazra/github-readme-stats)
+
 ---------------------------------------------------------------
 
 <center>
