@@ -46,6 +46,20 @@ For more detailed usage, you can check it with
 python ./pagerank/pagerank.py --help
 ```
 
+#### Influence Maximization Problem
+
+To run this program, here is an example"
+
+```bash
+python ./influence-maximization/hill-climbing.py --edges ./influence-maximization/Employee_Movie_Choices.txt
+```
+
+For more detailed usage, you can check it with
+
+```bash
+python ./influence-maximization/hill-climbing.py --help
+```
+
 ### Reference
 
 [1] Zhu, Y., 2020. *Ve444 Networks Hw3.pdf*.

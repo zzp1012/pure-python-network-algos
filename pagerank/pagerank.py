@@ -2,8 +2,7 @@
 import logging
 import argparse
 import pandas as pd 
-import numpy as np
-from pandas.core.algorithms import rank # these are two libs for calculation
+import numpy as np  # these are two libs for calculation
 
 # set the logger
 logging.basicConfig(
@@ -103,6 +102,17 @@ def main():
     if not args.verbose:
         logger.setLevel(logging.INFO)
     logger.debug("--------DEBUG enviroment start---------")
+
+    # check the input file format
+    try:
+        edges_df = pd.read_table(args.edges, header = None, sep = " ")
+        if edges_df.dtypes[0] != np.dtype("int64") or edges_df.dtypes[1] != np.dtype("int64") or len(edges_df.columns) != 2 or np.sum(edges_df.values <= 0) != 0 or np.sum(edges_df.isnull().values):
+            raise ValueError 
+    except:
+        logger.warning("""The format of edgelists file is illegal. Plz change to 'int int' where two non-zero integer are separated by blankspace in each line
+                          indicating there should an edge from first int to second int.
+                       """)
+        return
 
     adj_mat = adjacency_mat(args.edges)
 
