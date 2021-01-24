@@ -1,25 +1,20 @@
 <div style="text-align:center">
 	<img src="images/ji_logo.png" alt="Jilogo" style="zoom:60%;" />
-</div>
+</div> 
 <center>
-	<h2>
-		VE444 Networks
-	</h2>
-</center> 
-<center>
-	<h3>
+	<h1>
 		Pure Python Implementation of Classical Network Algos
-	</h3>
+	</h1>
 </center>
 <center>
-   <h4>
+   <h2>
        FA 2020
-    </h4> 
+    </h2> 
 </center>
 
 ### Abstract
 
-This project is inspired by the coding assignment of course `VE444` to implement some classical networks algos using pure-python effectively and efficiently. Once we open source code of this project and if you want to refer to our work, please follow the Joint Institute’s honor code and don’t plagiarize these codes directly.
+This project is inspired by the coding assignment of course network to implement some classical networks algos using pure-python effectively and efficiently. Once we open source code of this project and if you want to refer to our work, please follow the Joint Institute’s honor code and don’t plagiarize these codes directly.
 
 ### Dependency
 
@@ -73,10 +68,6 @@ For more detailed usage, you can check it with
 ```bash
 python ./epidemic-model/SIR-model.py --help
 ```
-
-### Reference
-
-[1] Zhu, Y., 2020. *Ve444 Networks Hw3.pdf*.
 
 ---------------------------------------------------------------
 
