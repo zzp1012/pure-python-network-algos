@@ -1,6 +1,5 @@
-numpy==1.18.5
+numpy
 pandas
-logging
 argparse
 matplotlib
 networkx
